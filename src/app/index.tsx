@@ -1,9 +1,10 @@
-import { Text, View } from 'react-native'
+import { Welcome } from '@/components/welcome'
+import { View } from 'react-native'
 
 const Home = () => {
   return (
-    <View className="flex-1 items-center justify-center">
-      <Text className="font-bold text-2xl">Hello World</Text>
+    <View className="flex-1 gap-10 p-10">
+      <Welcome />
     </View>
   )
 }
