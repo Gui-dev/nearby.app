@@ -1,28 +1,30 @@
 // import { Loading } from '@/components/loading'
-// import {
-//   Inter_400Regular,
-//   Inter_500Medium,
-//   Inter_600SemiBold,
-//   useFonts,
-// } from '@expo-google-fonts/inter'
+import {
+  Rubik_400Regular,
+  Rubik_500Medium,
+  Rubik_600SemiBold,
+  Rubik_700Bold,
+  useFonts,
+} from '@expo-google-fonts/rubik'
 import { Slot } from 'expo-router'
 import { StatusBar, View } from 'react-native'
 
 import '@/styles/global.css'
 
 const Layout = () => {
-  // const [fontsLoaded] = useFonts({
-  //   Inter_400Regular,
-  //   Inter_500Medium,
-  //   Inter_600SemiBold,
-  // })
+  const [fontsLoaded] = useFonts({
+    Rubik_400Regular,
+    Rubik_500Medium,
+    Rubik_600SemiBold,
+    Rubik_700Bold,
+  })
 
-  // if (!fontsLoaded) {
-  //   return <Loading />
-  // }
+  if (!fontsLoaded) {
+    return
+  }
 
   return (
-    <View className="flex-1">
+    <View className="flex-1 bg-gray-100">
       <StatusBar
         barStyle="dark-content"
         backgroundColor="transparent"
