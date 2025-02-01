@@ -1,4 +1,4 @@
-// import { Loading } from '@/components/loading'
+import { Loading } from '@/components/loading'
 import {
   Rubik_400Regular,
   Rubik_500Medium,
@@ -19,8 +19,8 @@ const Layout = () => {
     Rubik_700Bold,
   })
 
-  if (!fontsLoaded) {
-    return
+  if (fontsLoaded) {
+    return <Loading />
   }
 
   return (
