@@ -8,6 +8,7 @@ import {
 } from '@expo-google-fonts/rubik'
 import { Slot } from 'expo-router'
 import { StatusBar, View } from 'react-native'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 import '@/styles/global.css'
 
@@ -25,12 +26,14 @@ const Layout = () => {
 
   return (
     <View className="flex-1 bg-gray-100">
-      <StatusBar
-        barStyle="dark-content"
-        backgroundColor="transparent"
-        translucent
-      />
-      <Slot />
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <StatusBar
+          barStyle="dark-content"
+          backgroundColor="transparent"
+          translucent
+        />
+        <Slot />
+      </GestureHandlerRootView>
     </View>
   )
 }
