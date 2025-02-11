@@ -21,8 +21,8 @@ export const Category = ({
   return (
     <Pressable
       className={clsx(
-        'h-9 flex-row items-center justify-center gap-3 rounded-lg border border-gray-300 bg-gray-100 px-3',
-        { 'border-0 bg-green-base': isSelected },
+        'z-50 h-9 flex-row items-center justify-center gap-3 rounded-lg border border-gray-300 bg-gray-100 px-3',
+        { 'border-green-light bg-green-base': isSelected },
         className,
       )}
       {...rest}

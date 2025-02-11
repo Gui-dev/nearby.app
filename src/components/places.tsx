@@ -1,5 +1,6 @@
 import { colors } from '@/styles/colors'
 import BottomSheet, { BottomSheetFlatList } from '@gorhom/bottom-sheet'
+import { router } from 'expo-router'
 import { useRef } from 'react'
 import { Text, useWindowDimensions } from 'react-native'
 import { type IPlaceProps, Place } from './place'
@@ -14,6 +15,10 @@ export const Places = ({ data }: IPlacesProps) => {
   const snapPoints = {
     min: 278,
     max: dimensions.height - 128,
+  }
+
+  const handleNavigateToMarket = (id: string) => {
+    router.navigate(`/market/${id}`)
   }
 
   return (
@@ -34,7 +39,12 @@ export const Places = ({ data }: IPlacesProps) => {
         data={data}
         keyExtractor={item => item.id}
         renderItem={({ item }) => {
-          return <Place place={item} />
+          return (
+            <Place
+              place={item}
+              onPress={() => handleNavigateToMarket(item.id)}
+            />
+          )
         }}
         contentContainerClassName="gap-3 p-4 pb-24"
         ListHeaderComponent={() => {

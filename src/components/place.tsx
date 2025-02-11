@@ -34,7 +34,7 @@ export const Place = ({ place, ...rest }: IPlaceRequest) => {
 
       <View className="flex-1">
         <Text className="font-medium text-gray-600 text-sm">{place.name}</Text>
-        <Text className="font-regular text-gray-600 text-xs">
+        <Text className="font-regular text-gray-600 text-xs" numberOfLines={2}>
           {place.description}
         </Text>
         <View className="mt-2 flex-row gap-2">
