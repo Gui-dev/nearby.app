@@ -20,7 +20,7 @@ export interface IDetailsProps {
 
 export const Details = ({ data }: IDetailsProps) => {
   return (
-    <View className="flex-1 rounded-s-2xl border-t-2 bg-gray-100 p-8 pb-0">
+    <View className="rounded-s-2xl border-t-2 bg-gray-100 p-8 pb-0">
       <Text className="font-bold text-2xl text-gray-600">{data.name}</Text>
       <Text className="mt-3 mb-8 font-regular text-base text-gray-500 leading-5">
         {data.description}
