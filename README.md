@@ -11,9 +11,9 @@ em estabelecimentos próximos a você
 **Demonstração:**
 
 <p align="center">
-  <img alt="Nearby.app" src="./.screens/home.jpg" width="33%">
-  <img alt="Nearby.app" src="./.screens/map.jpg" width="33%">
-  <img alt="Nearby.app" src="./.screens/details.jpg" width="33%">
+  <img alt="Nearby.app" src="./.screens/home.jpg" width="30%">
+  <img alt="Nearby.app" src="./.screens/map.jpg" width="30%">
+  <img alt="Nearby.app" src="./.screens/details.jpg" width="30%">
 
 </p>
 
